@@ -23,7 +23,8 @@
         ];
         shellHook = ''
           echo "hello hol4"
-          export HOLDIR="${hol4}/holdir/"
+          export "HOLDIR=${hol4}/holdir/"
+          export "PATH=$PATH:${hol4}/holdir/bin/"
         '';
       };
     };
